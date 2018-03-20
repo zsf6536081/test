@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>show all</title>
+</head>
+<body>
+    {%for n in us%}
+    <ul>
+        {{n.username}}
+    </ul>
+    {%endfor%}
+
+    <a href="{%url 'log' %}">regist</a>
+</body>
+</html>

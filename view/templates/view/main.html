@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block main %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>longin</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/view/css/style.css' %}">
+    <script type="text/javascript" src="{% static 'view/js/java.js' %}"></script>
+</head>
+<body>
+    <h1>hello:{{user}}</h1>
+    <img src="{% static 'view/img/2.42.png' %}">
+    <a href="/login">登陆</a>
+    <a href="quit">退出登陆</a>
+</body>
+</html>
+
+{% endblock main %}
